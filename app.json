@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Frost",
+    "slug": "frost-plain-expo",
+    "scheme": "frost",
+    "platforms": [
+      "ios"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Frost to scan product barcodes for Thrift Mode.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.shreyank28.frostplainexpo"
+    },
+    "plugins": [
+      "./plugins/withDisableUserScriptSandboxing",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Frost to scan product barcodes for Thrift Mode.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "iosAppId": "ca-app-pub-6327161331202692~5385206151"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cb568921-24c2-44d2-87fa-d5ab952b0757"
+      }
+    }
+  }
+}

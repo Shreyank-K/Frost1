@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+.env
+backend/.env
+supabase/functions/.env
+*.log
+.DS_Store
+ios/
+android/
+__MACOSX/
+.vscode/
+supabase/.temp/
+backend/node_modules/
